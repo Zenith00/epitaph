@@ -167,6 +167,6 @@
   (enable-console-print!)
   (om/root app app-state {:target (js/document.getElementById "app")})
   (play-notification-sound! (:notification-pitch (first (:civs @app-state))))
-  (js/setInterval tick 1000))
+  (js/setInterval tick 250))
 
 (init)
